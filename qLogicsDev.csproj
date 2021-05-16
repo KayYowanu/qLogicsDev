@@ -1,0 +1,112 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Umbraco.Cms" Version="9.0.0-beta001" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+        <Compile Remove="umbraco\Data\**" />
+        <Compile Remove="umbraco\logs\**" />
+        <Compile Remove="umbraco\MediaCache\**" />
+        <Compile Remove="umbraco\models\**" />
+    </ItemGroup>
+    <ItemGroup>
+        <EmbeddedResource Remove="umbraco\Data\**" />
+        <EmbeddedResource Remove="umbraco\logs\**" />
+        <EmbeddedResource Remove="umbraco\MediaCache\**" />
+        <EmbeddedResource Remove="umbraco\models\**" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Remove="umbraco\models\**" />
+        <None Remove="umbraco\Data\**" />
+        <None Remove="umbraco\logs\**" />
+        <None Remove="umbraco\MediaCache\**" />
+        <None Include="config\**\*.*">
+            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+            <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+        </None>
+        <None Include="umbraco\**\*.*">
+            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+            <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+        </None>
+    </ItemGroup>
+    <ItemGroup>
+        <Content Remove="umbraco\Data\**" />
+        <Content Remove="umbraco\logs\**" />
+        <Content Remove="umbraco\MediaCache\**" />
+        <Content Remove="umbraco\models\**" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Remove="wwwroot\umbraco\bootstrap\css\bootstrap.css.map" />
+      <Content Remove="wwwroot\umbraco\bootstrap\css\bootstrap.min.css.map" />
+      <Content Remove="wwwroot\umbraco\bootstrap\css\bootstrap.rtl.css.map" />
+      <Content Remove="wwwroot\umbraco\bootstrap\css\bootstrap.rtl.min.css.map" />
+      <Content Remove="wwwroot\umbraco\bootstrap\js\bootstrap.bundle.js" />
+      <Content Remove="wwwroot\umbraco\bootstrap\js\bootstrap.bundle.js.map" />
+      <Content Remove="wwwroot\umbraco\bootstrap\js\bootstrap.bundle.min.js" />
+      <Content Remove="wwwroot\umbraco\bootstrap\js\bootstrap.bundle.min.js.map" />
+      <Content Remove="wwwroot\umbraco\bootstrap\js\bootstrap.esm.js" />
+      <Content Remove="wwwroot\umbraco\bootstrap\js\bootstrap.esm.js.map" />
+      <Content Remove="wwwroot\umbraco\bootstrap\js\bootstrap.esm.min.js" />
+      <Content Remove="wwwroot\umbraco\bootstrap\js\bootstrap.esm.min.js.map" />
+      <Content Remove="wwwroot\umbraco\bootstrap\js\bootstrap.js" />
+      <Content Remove="wwwroot\umbraco\bootstrap\js\bootstrap.js.map" />
+      <Content Remove="wwwroot\umbraco\bootstrap\js\bootstrap.min.js" />
+      <Content Remove="wwwroot\umbraco\bootstrap\js\bootstrap.min.js.map" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="wwwroot\umbraco\bootstrap\css\bootstrap.css.map" />
+      <None Include="wwwroot\umbraco\bootstrap\css\bootstrap.min.css.map" />
+      <None Include="wwwroot\umbraco\bootstrap\css\bootstrap.rtl.css.map" />
+      <None Include="wwwroot\umbraco\bootstrap\css\bootstrap.rtl.min.css.map" />
+      <None Include="wwwroot\umbraco\bootstrap\js\bootstrap.bundle.js" />
+      <None Include="wwwroot\umbraco\bootstrap\js\bootstrap.bundle.js.map" />
+      <None Include="wwwroot\umbraco\bootstrap\js\bootstrap.bundle.min.js" />
+      <None Include="wwwroot\umbraco\bootstrap\js\bootstrap.bundle.min.js.map" />
+      <None Include="wwwroot\umbraco\bootstrap\js\bootstrap.esm.js" />
+      <None Include="wwwroot\umbraco\bootstrap\js\bootstrap.esm.js.map" />
+      <None Include="wwwroot\umbraco\bootstrap\js\bootstrap.esm.min.js" />
+      <None Include="wwwroot\umbraco\bootstrap\js\bootstrap.esm.min.js.map" />
+      <None Include="wwwroot\umbraco\bootstrap\js\bootstrap.js" />
+      <None Include="wwwroot\umbraco\bootstrap\js\bootstrap.js.map" />
+      <None Include="wwwroot\umbraco\bootstrap\js\bootstrap.min.js" />
+      <None Include="wwwroot\umbraco\bootstrap\js\bootstrap.min.js.map" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\css\bootstrap-grid.css.map" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\css\bootstrap-grid.min.css.map" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\css\bootstrap-grid.rtl.css.map" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\css\bootstrap-grid.rtl.min.css.map" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\css\bootstrap-reboot.css.map" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\css\bootstrap-reboot.min.css.map" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\css\bootstrap-reboot.rtl.css.map" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\css\bootstrap-reboot.rtl.min.css.map" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\css\bootstrap-utilities.css.map" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\css\bootstrap-utilities.min.css.map" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\css\bootstrap-utilities.rtl.css.map" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\css\bootstrap-utilities.rtl.min.css.map" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\css\bootstrap.css.map" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\css\bootstrap.min.css.map" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\css\bootstrap.rtl.css.map" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\css\bootstrap.rtl.min.css.map" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\js\bootstrap.bundle.js" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\js\bootstrap.bundle.js.map" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\js\bootstrap.bundle.min.js" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\js\bootstrap.bundle.min.js.map" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\js\bootstrap.esm.js" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\js\bootstrap.esm.js.map" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\js\bootstrap.esm.min.js" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\js\bootstrap.esm.min.js.map" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\js\bootstrap.js" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\js\bootstrap.js.map" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\js\bootstrap.min.js" />
+      <None Include="wwwroot\umbraco\resources\bootstrap\js\bootstrap.min.js.map" />
+    </ItemGroup>
+
+    <!--Set this to true ModelsBuilder mode is not PureLive -->
+    <PropertyGroup>
+        <RazorCompileOnBuild>false</RazorCompileOnBuild>
+    </PropertyGroup>
+</Project>
