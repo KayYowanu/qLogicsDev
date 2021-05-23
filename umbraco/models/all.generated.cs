@@ -5,7 +5,7 @@ using  Umbraco.Cms.Core.PublishedCache;
 using  Umbraco.Cms.Infrastructure.ModelsBuilder;
 using  Umbraco.Cms.Core;
 using  Umbraco.Extensions;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "e49d21d2d9832d895fa785beae897ede")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "ae131332dc60648a2e64866abf6a25a2")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 
@@ -152,11 +152,11 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		// properties
 
 		///<summary>
-		/// About Image
+		/// About BG Image
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "9.0.0-beta001+ae3fc84369a30dbab394d9c1c0f082eb57eb9b17")]
-		[ImplementPropertyType("aboutImage")]
-		public virtual global::Umbraco.Cms.Core.Models.PublishedContent.IPublishedContent AboutImage => this.Value<global::Umbraco.Cms.Core.Models.PublishedContent.IPublishedContent>(_publishedValueFallback, "aboutImage");
+		[ImplementPropertyType("aboutBGImage")]
+		public virtual global::Umbraco.Cms.Core.Models.PublishedContent.IPublishedContent AboutBgimage => this.Value<global::Umbraco.Cms.Core.Models.PublishedContent.IPublishedContent>(_publishedValueFallback, "aboutBGImage");
 
 		///<summary>
 		/// About Title
@@ -166,11 +166,18 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string AboutTitle => this.Value<string>(_publishedValueFallback, "aboutTitle");
 
 		///<summary>
-		/// About Us Content
+		/// About Us Content Left
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "9.0.0-beta001+ae3fc84369a30dbab394d9c1c0f082eb57eb9b17")]
-		[ImplementPropertyType("aboutUsContent")]
-		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString AboutUsContent => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "aboutUsContent");
+		[ImplementPropertyType("aboutUsContentLeft")]
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString AboutUsContentLeft => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "aboutUsContentLeft");
+
+		///<summary>
+		/// About Us Content Right
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "9.0.0-beta001+ae3fc84369a30dbab394d9c1c0f082eb57eb9b17")]
+		[ImplementPropertyType("aboutUsContentRight")]
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString AboutUsContentRight => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "aboutUsContentRight");
 	}
 
 	/// <summary>Services</summary>

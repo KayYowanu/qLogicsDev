@@ -3,12 +3,34 @@
 @using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
 @{
 	Layout = "Layout.cshtml";
+	var aboutPage = (ContentModels.About) Model.Root();
+	var leftcontent = aboutPage.AboutUsLeftContent;
 }
-<section id="contact" class="contact" style="background: #f5faf6;">
-      <div class="container">
-<div class="section-title">
-          <h2 data-aos="fade-up">About Us</h2>
-          <p data-aos="fade-up">Coming Soon.......</p>
-</div>
-</div>
+<section id="about" class="about">
+    <div class="container margintop">
+
+        <div class="section-title" data-aos="zoom-out">
+            <div class="content">
+                <h3>Our Corporation</h3>
+                </div>
+            </div>
+
+            <div class="row content" data-aos="fade-up">
+                <div class="col-lg-6">
+                    <p>
+                        <!-- Left About us content goes here-->
+                        @leftcontent
+                        <!-- Left About us content ends here-->
+                    </p>
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0">
+                    <p>
+                        <!-- Right About us content goes here-->
+                        
+                        <!-- Right About us content ends here-->
+                    </p>
+                </div>
+            </div>
+
+        </div>
 </section>

@@ -7,7 +7,7 @@ body {
 }
 
 a {
-    color: #ff5821;
+    color: #610a04;
     text-decoration: none;
 }
 
@@ -20,49 +20,17 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", sans-serif;
 }
 
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-    position: fixed;
-    visibility: hidden;
-    opacity: 0;
-    right: 15px;
-    bottom: 15px;
-    z-index: 996;
-    background: #ff5821;
-    width: 40px;
-    height: 40px;
-    border-radius: 4px;
-    transition: all 0.4s;
+.icon-color {
+    background: #610a04;
 }
 
-    .back-to-top i {
-        font-size: 28px;
-        color: #fff;
-        line-height: 0;
-    }
-
-    .back-to-top:hover {
-        background: #ff774a;
-        color: #fff;
-    }
-
-    .back-to-top.active {
-        visibility: visible;
-        opacity: 1;
-    }
-
-/*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
---------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
-    [data-aos-delay] {
-        transition-delay: 0 !important;
-    }
+.margintop {
+    margin-top: 50px;
 }
 
-
+.margintop50 {
+    margin-top: 80px;
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -71,6 +39,8 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.5s;
     z-index: 997;
     background: #fff;
+    width: 100%;
+    position: fixed;
 }
 
     #header.header-fixed {
@@ -86,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
         #header .logo h1 a, #header .logo h1 a:hover {
-            color: #635551;
+            color: white;
             text-decoration: none;
         }
 
@@ -120,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
         display: flex;
         list-style: none;
         align-items: center;
-        background:white;
+        background: #610a04;
     }
 
     .navbar li {
@@ -134,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
         padding: 10px 0 10px 30px;
         font-size: 14px;
         font-family: "Poppins", sans-serif;
-        color: #635551;
+        color: white;
         white-space: nowrap;
         transition: 0.3s;
     }
@@ -146,11 +116,11 @@ h1, h2, h3, h4, h5, h6 {
         }
 
         .navbar a:hover, .navbar .active, .navbar li:hover > a {
-            color: #ff5821;
+            color: #0a55bf;
         }
 
     .navbar .getstarted {
-        background: #ff5821;
+        background: #610a04;
         padding: 8px 20px;
         margin-left: 30px;
         border-radius: 4px;
@@ -191,7 +161,7 @@ h1, h2, h3, h4, h5, h6 {
             }
 
             .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-                color: #ff5821;
+                color: #610a04;
             }
 
     .navbar .dropdown:hover > ul {
@@ -288,7 +258,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
         .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-            color: #ff5821;
+            color: #610a04;
         }
 
     .navbar-mobile .getstarted {
@@ -320,7 +290,7 @@ h1, h2, h3, h4, h5, h6 {
             }
 
             .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-                color: #ff5821;
+                color: #610a04;
             }
 
     .navbar-mobile .dropdown > .dropdown-active {
@@ -332,8 +302,8 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
     width: 100%;
-    height: 60vh;
-    background: url("/umbraco/assets/img/hero.jpg") center center;
+    height: 70vh;
+    background: url("/img/hero.jpg") center center;
     background-size: cover;
     position: relative;
     z-index: 1;
@@ -371,7 +341,7 @@ h1, h2, h3, h4, h5, h6 {
 
     #hero .get-started-icon {
         font-size: 24px;
-        background: #ff5821;
+        background: #610a04;
         padding: 14px;
         color: #fff;
         border-radius: 50px;
@@ -390,14 +360,14 @@ h1, h2, h3, h4, h5, h6 {
         margin-left: -10px;
         padding: 8px 26px 8px 26px;
         color: #fff;
-        background: #584b48;
+        background: #615857;
         border-radius: 0 50px 50px 0;
         position: relative;
         z-index: 4;
     }
 
         #hero .btn-get-started:hover {
-            background: #ff5821;
+            background: #610a04;
         }
 
 @media (min-width: 1024px) {
@@ -439,6 +409,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
+
 section {
     padding: 60px 0;
     overflow: hidden;
@@ -467,51 +438,17 @@ section {
     }
 
 /*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-    padding: 15px 0;
-    background: #f4f2f2;
-    margin-bottom: 40px;
-}
-
-    .breadcrumbs h2 {
-        font-size: 28px;
-        font-weight: 500;
-    }
-
-    .breadcrumbs ol {
-        display: flex;
-        flex-wrap: wrap;
-        list-style: none;
-        padding: 0 0 10px 0;
-        margin: 0;
-        font-size: 14px;
-    }
-
-        .breadcrumbs ol li + li {
-            padding-left: 10px;
-        }
-
-            .breadcrumbs ol li + li::before {
-                display: inline-block;
-                padding-right: 10px;
-                color: #635551;
-                content: "/";
-            }
-
-/*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
 .why-us {
-    padding: 0 0 30px 0;
+    padding: 0 0 5px 0;
     position: relative;
     z-index: 3;
 }
 
     .why-us .content {
         padding: 30px;
-        background: #ff5821;
+        background: #610a04;
         border-radius: 4px;
         color: #fff;
     }
@@ -540,7 +477,7 @@ section {
             }
 
             .why-us .content .more-btn:hover {
-                color: #ff5821;
+                color: #610a04;
                 background: #fff;
             }
 
@@ -555,7 +492,7 @@ section {
 
         .why-us .icon-boxes .icon-box i {
             font-size: 40px;
-            color: #ff5821;
+            color: #610a04;
             margin-bottom: 30px;
         }
 
@@ -570,84 +507,145 @@ section {
             color: #716f6f;
         }
 /*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about {
+    padding-top: 80px;
+}
+
+    .about .content h3 {
+        font-weight: 600;
+        font-size: 26px;
+    }
+
+    .about .content ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .about .content ul li {
+            padding-left: 28px;
+            position: relative;
+        }
+
+            .about .content ul li + li {
+                margin-top: 10px;
+            }
+
+        .about .content ul i {
+            position: absolute;
+            left: 0;
+            top: 2px;
+            font-size: 20px;
+            color: #ef6603;
+            line-height: 1;
+        }
+
+    .about .content p:last-child {
+        margin-bottom: 0;
+    }
+
+    .about .content .btn-learn-more {
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 12px 32px;
+        border-radius: 5px;
+        transition: 0.3s;
+        line-height: 1;
+        color: #ef6603;
+        -webkit-animation-delay: 0.8s;
+        animation-delay: 0.8s;
+        margin-top: 6px;
+        border: 2px solid #ef6603;
+    }
+
+        .about .content .btn-learn-more:hover {
+            background: #ef6603;
+            color: #fff;
+            text-decoration: none;
+        }
+/*--------------------------------------------------------------
 # Services Page
 --------------------------------------------------------------*/
 .services .icon-box {
     text-align: center;
-    border: 2px solid #ededed;
+    border: 4px solid #ededed;
     padding: 80px 20px;
     transition: all ease-in-out 0.3s;
-    background:white;
+    background: white;
 }
 
-.services .icon-box .icon {
-    margin: 0 auto;
-    width: 64px;
-    height: 64px;
-    background: #e96b56;
-    border-radius: 5px;
-    transition: all .3s ease-out 0s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    transform-style: preserve-3d;
-}
-
-    .services .icon-box .icon i {
-        color: #fff;
-        font-size: 28px;
-    }
-
-    .services .icon-box .icon::before {
-        position: absolute;
-        content: '';
-        left: -8px;
-        top: -8px;
-        height: 100%;
-        width: 100%;
-        background: #fbe2dd;
+    .services .icon-box .icon {
+        margin: 0 auto;
+        width: 64px;
+        height: 64px;
+        background: #610a04;
         border-radius: 5px;
         transition: all .3s ease-out 0s;
-        transform: translateZ(-1px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        transform-style: preserve-3d;
     }
 
-.services .icon-box h4 {
-    font-weight: 700;
-    margin-bottom: 15px;
-    font-size: 24px;
-}
-
-    .services .icon-box h4 a {
-        color: #545454;
-    }
-
-.services .icon-box p {
-    line-height: 24px;
-    font-size: 14px;
-    margin-bottom: 0;
-}
-
-.services .icon-box:hover {
-    background: #e96b56;
-    border-color: #e96b56;
-}
-
-    .services .icon-box:hover .icon {
-        background: #fff;
-    }
-
-        .services .icon-box:hover .icon i {
-            color: #e96b56;
+        .services .icon-box .icon i {
+            color: #fff;
+            font-size: 28px;
         }
 
-        .services .icon-box:hover .icon::before {
-            background: #ef9383;
+        .services .icon-box .icon::before {
+            position: absolute;
+            content: '';
+            left: -8px;
+            top: -8px;
+            height: 100%;
+            width: 100%;
+            background: #a65a53;
+            border-radius: 5px;
+            transition: all .3s ease-out 0s;
+            transform: translateZ(-1px);
         }
 
-    .services .icon-box:hover h4 a, .services .icon-box:hover p {
-        color: #fff;
+    .services .icon-box h4 {
+        font-weight: 700;
+        margin-bottom: 15px;
+        font-size: 24px;
     }
+
+        .services .icon-box h4 a {
+            color: #545454;
+        }
+
+    .services .icon-box p {
+        line-height: 24px;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .services .icon-box:hover {
+        background: #610a04;
+        border-color: #610a04;
+    }
+
+        .services .icon-box:hover .icon {
+            background: #fff;
+        }
+
+            .services .icon-box:hover .icon i {
+                color: #610a04;
+            }
+
+            .services .icon-box:hover .icon::before {
+                background: #a65a53;
+            }
+
+        .services .icon-box:hover h4 a, .services .icon-box:hover p {
+            color: #fff;
+        }
 
 /*--------------------------------------------------------------
 # Our Skills
@@ -672,7 +670,7 @@ section {
     .skills .content ul i {
         font-size: 20px;
         padding-right: 4px;
-        color: #e96b56;
+        color: #610a04;
     }
 
 .skills .content p:last-child {
@@ -709,21 +707,20 @@ section {
     width: 1px;
     height: 10px;
     transition: .9s;
-    background-color: #e96b56;
+    background-color: #610a04;
 }
-
 /*--------------------------------------------------------------
 # Contact Page
 --------------------------------------------------------------*/
 .contact .info-box {
     color: #313030;
-    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+    box-shadow: 0 0 30px rgba(110, 81, 78);
     padding: 20px;
 }
 
     .contact .info-box i {
         font-size: 32px;
-        color: #ff5821;
+        color: #610a04;
         border-radius: 50%;
         padding: 8px;
         border: 2px dotted #ffded4;
@@ -798,7 +795,7 @@ section {
     }
 
         .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-            border-color: #ff5821;
+            border-color: #610a04;
         }
 
     .contact .php-email-form input {
@@ -810,7 +807,7 @@ section {
     }
 
     .contact .php-email-form button[type="submit"] {
-        background: #ff5821;
+        background: #610a04;
         border: 0;
         padding: 10px 24px;
         color: #fff;
@@ -818,7 +815,7 @@ section {
     }
 
         .contact .php-email-form button[type="submit"]:hover {
-            background: #ff7e54;
+            background: #610a04;
         }
 
 @-webkit-keyframes animate-loading {
