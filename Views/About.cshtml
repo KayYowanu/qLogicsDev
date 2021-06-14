@@ -1,10 +1,11 @@
 ﻿@using Umbraco.Cms.Web.Common.PublishedModels;
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.About>
 @using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@using ContentModels1 = Umbraco
 @{
-	Layout = "Layout.cshtml";
-	var aboutPage = (ContentModels.About) Model.Root();
-	var leftcontent = aboutPage.AboutUsLeftContent;
+    Layout = "Layout.cshtml";
+    //var aboutPage = (ContentModels.About)Model.Root();
+    //var leftcontent = aboutPage.aboutUsContentLeft;
 }
 <section id="about" class="about">
     <div class="container margintop">
@@ -12,25 +13,23 @@
         <div class="section-title" data-aos="zoom-out">
             <div class="content">
                 <h3>Our Corporation</h3>
-                </div>
             </div>
-
-            <div class="row content" data-aos="fade-up">
-                <div class="col-lg-6">
-                    <p>
-                        <!-- Left About us content goes here-->
-                        @leftcontent
-                        <!-- Left About us content ends here-->
-                    </p>
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0">
-                    <p>
-                        <!-- Right About us content goes here-->
-                        
-                        <!-- Right About us content ends here-->
-                    </p>
-                </div>
-            </div>
-
         </div>
+
+        <div class="row content" data-aos="fade-up">
+            <div class="col-lg-6">
+                <p>
+                    <!-- Left About us content goes here-->
+                    <!-- Left About us content ends here-->
+                </p>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+                <p>
+                    <!-- Right About us content goes here-->
+                    <!-- Right About us content ends here-->
+                </p>
+            </div>
+        </div>
+
+    </div>
 </section>

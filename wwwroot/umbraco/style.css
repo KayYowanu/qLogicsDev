@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 70px;
     transition: all 0.5s;
     z-index: 997;
-    background: #fff;
+    background: #610a04;
     width: 100%;
     position: fixed;
 }
@@ -303,7 +303,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
     width: 100%;
     height: 70vh;
-    background: url("/img/hero.jpg") center center;
+    background: url("/umbraco/assets/img/hero.jpg") center center;
     background-size: cover;
     position: relative;
     z-index: 1;
